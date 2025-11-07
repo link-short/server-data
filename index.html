@@ -41,20 +41,23 @@ footer {
   <body>
     <header>
       <h1 id="site-title">ServerData</h1>
- 		  <h5 id="site-title-description">Free service to make your database></h5>
+ 		  <h3 id="site-title-description">Free service to make your database</h5>
     </header>
     <main>
-      <p id="site-description">#site-description</p>
+      <p id="site-description">To make your own database click the button Create.</p>
+      <button id="createDatabaseButton">CREATE</button>
     </main>
     <footer>
-      <p id="site-rights">© Winnigames2024 2025 Все права защищены</p>
+      <p id="site-rights">Winnigames2024 © 2025 Все права защищены</p>
     </footer>
   </body>
   <script>
-    const SiteDescription = document.getElementById('site-description');
-    var descriptionText = "To make your own database click the button Create.";
+    cconst createButton = document.getElementById('createDatabaseButton');
 
-    site-description.textContent = descriptionText; // Changes the text inside the <p id="site-description"></p>
+    createButton.addEventListener('click', function() {
+        button.disabled = true; // Disable the button after one click
+        location.href= '/404page/new/$type=Database';
+    });
     console.log('Site Description loaded sussesfull!!!');
   </script>
 </html>
